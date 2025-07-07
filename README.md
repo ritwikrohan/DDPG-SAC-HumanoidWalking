@@ -16,7 +16,7 @@ This project implements a Deep Deterministic Policy Gradient (DDPG) agent to lea
 
 ```bash
 git clone https://github.com/ritwikrohan/humanoid_walking_ddpg.git
-cd humanoid-ddpg
+cd humanoid_walking_ddpg
 
 python3 -m venv venv
 source venv/bin/activate
@@ -24,7 +24,7 @@ source venv/bin/activate
 # Install PyTorch with correct CUDA version (example for CUDA 12.8)
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 
-# Then install other dependencies (optional)
+# Then install other dependencies
 pip install -r requirements.txt
 
 python3 main.py
