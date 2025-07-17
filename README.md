@@ -25,7 +25,7 @@ Earlier attempts with DDPG were less stable; SAC provided smoother and more robu
 ## Setup and Installation
 
 ```bash
-git clone https://github.com/ritwikrohan/humanoid_walking_ddpg.git
+git clone https://github.com/ritwikrohan/humanoid_walking.git
 cd humanoid_walking_ddpg
 
 python3 -m venv venv
