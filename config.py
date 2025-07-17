@@ -23,7 +23,7 @@ SIGMA_MIN = 0.05         # Minimum sigma value to prevent noise from disappearin
 REWARD_SCALE = 1.0       # Multiplier to scale the shaped rewards (can tune to make rewards larger or smaller)
 
 MODEL_PATH = "checkpoints/ddpg_humanoid_checkpoint.pth"  # File path for periodic checkpoints
-BEST_MODEL_PATH = "checkpoints/ddpg_humanoid_best_till_now.pth"   # File path for saving the best performing model
+BEST_MODEL_PATH = "sac2_checkpoint_1000000.pt"   # File path for saving the best performing model
 
 MOVING_AVG_WINDOW = 50   # Window size to calculate moving average reward (used for smoother plots)
 

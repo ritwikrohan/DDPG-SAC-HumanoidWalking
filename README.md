@@ -1,6 +1,16 @@
-# DDPG Humanoid Walker
+# Humanoid Walker
 
-This project implements a Deep Deterministic Policy Gradient (DDPG) agent to learn humanoid walking behavior using Gymnasium's `Humanoid-v5` environment (MuJoCo-based).
+This project implements a **Soft Actor-Critic (SAC)** agent to learn humanoid walking behavior using Gymnasium's `Humanoid-v5` environment (MuJoCo-based).  
+Earlier attempts with DDPG were less stable; SAC provided smoother and more robust walking performance.
+
+---
+
+## Algorithms
+
+-  **SAC** (main)
+-  DDPG (experimental, included for comparison)
+
+---
 
 ## Project Structure
 
@@ -27,7 +37,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 # Then install other dependencies
 pip install -r requirements.txt
 
-python3 main.py
+python3 main_sac.py
 ```
 - Trains the humanoid walker from scratch.
 - Saves the best model to `checkpoints/ddpg_humanoid_best.pth`
@@ -43,3 +53,9 @@ python3 eval.py
 - Runs episodes without noise to check pure policy performance.ddpg_humanoid_best.pth`
 - Prints total reward per episode and average reward across runs.
 - Opens MuJoCo viewer to visualize humanoid walking.
+
+## Demo
+
+Below is a sample result of the trained SAC agent walking in the MuJoCo `Humanoid-v5` environment.
+
+![Humanoid Walking Demo](media/humanoid_walking.gif)
