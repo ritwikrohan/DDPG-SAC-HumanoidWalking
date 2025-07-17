@@ -16,5 +16,5 @@ NOISE_DECAY = 0.995
 SIGMA_MIN = 0.05
 REWARD_SCALE = 1.0
 MODEL_PATH = "checkpoints/ddpg_humanoid_checkpoint.pth"
-BEST_MODEL_PATH = "checkpoints/ddpg_humanoid_best.pth"
+BEST_MODEL_PATH = "checkpoints/best3.pth"
 MOVING_AVG_WINDOW = 50

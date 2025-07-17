@@ -1,0 +1,13 @@
+# Ignore ALL files inside checkpoints/
+checkpoints/*
+
+# But keep the ones that are already tracked (manually list them if needed)
+!checkpoints/.gitkeep  # or any existing known file
+
+# Optional: ignore these types of files inside checkpoints
+checkpoints/*.pth
+checkpoints/*.pt
+
+utils/__pycache__/
+
+experiments/venv/
