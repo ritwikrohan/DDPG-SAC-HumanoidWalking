@@ -11,3 +11,4 @@ checkpoints/*.pt
 utils/__pycache__/
 
 experiments/venv/
+*.tfevents.*
